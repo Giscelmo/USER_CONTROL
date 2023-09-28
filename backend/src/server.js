@@ -1,4 +1,4 @@
-const sequelize=require('./database')
+const sequelize = require('./database')
 const app = require('./app');
 require('dotenv').config();
 
@@ -7,11 +7,11 @@ sequelize
     .sync()
     .then(() => {
         app.listen(PORT, () => {
-            console.log(`Server is running on port ${ PORT }`);
+            console.log(` Servidor está rodando na porta ${PORT}`);
         });
     })
     .catch((error) => {
-        console.error('Error syncing database:', error);
+        console.error('Erro ao sincronizar banco de dados:', error);
     });
 
 

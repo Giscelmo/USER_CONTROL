@@ -3,7 +3,7 @@ const router = Router();
 
 const userRoutes = require('./userRoutes')
 
-router.use('/userRoutes', userRoutes)
+router.use('/user-create', userRoutes)
 
 
 module.exports = router
